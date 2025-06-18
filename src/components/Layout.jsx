@@ -2,6 +2,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
+import Chatbot from './Chatbot';
 
 const navItems = [
     { name: 'Dashboard', path: '/home' },
@@ -39,11 +40,13 @@ export default function Layout({ children }) {
                     username={username}
                     onLogout={handleLogout}
                 />
-                <main className="flex-grow p-4 bg-white shadow-inner">
+                <main className="flex-grow p-4 bg-white shadow-inner relative">
                     {children}
                 </main>
+                <Chatbot />
             </div>
         </div>
     );
 }
+
 
