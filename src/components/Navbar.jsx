@@ -1,8 +1,8 @@
 export default function Navbar({ toggleSidebar, currentPage, username, onLogout, darkMode }) {
     return (
         <nav className={`shadow-md px-4 py-3 flex items-center justify-between transition-colors duration-300 ${darkMode
-                ? 'bg-gray-900 text-white'
-                : 'bg-white text-gray-800'
+            ? 'bg-gray-900 text-white'
+            : 'bg-white text-gray-800'
             }`}>
             <div className="flex items-center space-x-4">
                 <button
