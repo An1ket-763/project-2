@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+/* Dark mode styles */
+.dark {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+    color: white;
+}
+
+/* Smooth transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
